@@ -1,0 +1,82 @@
+<?php
+	//input
+	date_default_timezone_set('Asia/Jakarta');
+	$a=TRUE;
+	
+	$kota="JAKARTA $a";
+	$Kota='JAKARTA $a';
+	
+	$K=array('JAKARTA','BEKASI','DEPOK');
+	
+	$asoc=array('NAMA'=>'UJANG',
+				'ALAMAT'=>'BANDUNG',
+				'USIA'=>12);
+	
+	$x=array(array(2,3,4), array(3,2,1), array(2,5,2));
+			 
+	$y=array(array(7,3,4),
+			 array(3,2,1),
+			 array(2,5,2));
+	
+	$z=$x+$y;
+	
+	$tgl=date("Y-m-d H:i:s");
+	$tgl1=date("d-F-Y H:i:s");
+	
+	//konstanta
+	define('pi', 3.14);
+	echo $a+pi;
+	
+	
+	//proses
+	//Operator
+	$hasil=2+3*5%2/2;
+	
+	
+	echo "<hr/>";
+	echo $hasil;
+	echo "<hr/>";
+	
+	//output
+
+	echo $tgl,$a;
+	echo "<br/>";
+	echo $tgl1;
+	echo "<br/>";
+	echo $a."-".pi."ini phi";
+	echo "<br/>";
+	
+	echo "<pre>";
+	print_r($K);
+	echo "</pre>";
+	echo "<br/>";
+	echo $asoc['NAMA'];
+	echo "<br/>";
+	echo$x[2][1];
+	
+	echo "<pre>";
+	print_r($z);
+	echo "</pre>";
+	
+	?>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<thead>
+				<tr>
+					<th>NAMA KOTA</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><?=$K[0];?></td>
+				</tr>
+				<tr>
+					<td><?=$K[1];?></td>
+				</tr>
+				<tr>
+					<td><?=$K[2];?></td>
+				</tr>
+			</tbody>
+		</table>
+	<?php
+	
+?>
